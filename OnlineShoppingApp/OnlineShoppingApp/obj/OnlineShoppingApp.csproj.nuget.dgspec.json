@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proqraming\\ASP-NET\\R-Final\\OnlineShoppingApp\\OnlineShoppingApp\\OnlineShoppingApp.csproj": {}
+    "C:\\Users\\hp\\Desktop\\New folder (2)\\sasas\\OnlineShoppingApp\\OnlineShoppingApp\\OnlineShoppingApp.csproj": {}
   },
   "projects": {
-    "D:\\Proqraming\\ASP-NET\\R-Final\\OnlineShoppingApp\\OnlineShoppingApp\\OnlineShoppingApp.csproj": {
+    "C:\\Users\\hp\\Desktop\\New folder (2)\\sasas\\OnlineShoppingApp\\OnlineShoppingApp\\OnlineShoppingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proqraming\\ASP-NET\\R-Final\\OnlineShoppingApp\\OnlineShoppingApp\\OnlineShoppingApp.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\New folder (2)\\sasas\\OnlineShoppingApp\\OnlineShoppingApp\\OnlineShoppingApp.csproj",
         "projectName": "OnlineShoppingApp",
-        "projectPath": "D:\\Proqraming\\ASP-NET\\R-Final\\OnlineShoppingApp\\OnlineShoppingApp\\OnlineShoppingApp.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Proqraming\\ASP-NET\\R-Final\\OnlineShoppingApp\\OnlineShoppingApp\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Desktop\\New folder (2)\\sasas\\OnlineShoppingApp\\OnlineShoppingApp\\OnlineShoppingApp.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\New folder (2)\\sasas\\OnlineShoppingApp\\OnlineShoppingApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +83,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -99,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
