@@ -42,7 +42,7 @@
     <h2>Featured Products</h2>
     <p>Summer Collection New Morden Design</p>
     <div class="pro-container">
-        @foreach (var product in collection)
+        @foreach (var product in Model.Products)
         {
             <div class="pro">
                     <img src="~/assets/img/products/@product.MainImagePath" alt="">

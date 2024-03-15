@@ -103,7 +103,7 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Update(UpdateViewModel updateViewModel)
+        public IActionResult Update(UpdateViewModel updateViewModel,int blogId)
         {
             if (!ModelState.IsValid)
             {
@@ -124,7 +124,7 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
             if (updateViewModel.blogId == null & updateViewModel.Id == null) return NotFound();
 
             var blogImage = _onlineShoppingDbContext.BlogImages
-                .FirstOrDefault(bi => bi.Id == updateViewModel.Id && bi.BlogId == updateViewModel.blogId);
+                .FirstOrDefault(bi => bi.Id == updateViewModel.Id && bi.BlogId == blogId);
 
             if (blogImage == null) return NotFound();
 
@@ -152,7 +152,7 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
             }
 
             _onlineShoppingDbContext.SaveChanges();
-            return RedirectToAction("List", new { blogId = updateViewModel.blogId });
+            return RedirectToAction("List", new { blogId = blogId });
 
         }
 

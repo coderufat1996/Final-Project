@@ -108,7 +108,7 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
                     }
 
                     string fileName = Guid.NewGuid() + aboutUpdateViewModel.Photo.FileName;
-                    string path = Path.Combine(_webHostEnvironment.WebRootPath, "img", fileName);
+                    string path = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "img", "about", fileName);
                     using (FileStream stream = new FileStream(path, FileMode.Create))
                     {
                         aboutUpdateViewModel.Photo.CopyTo(stream);

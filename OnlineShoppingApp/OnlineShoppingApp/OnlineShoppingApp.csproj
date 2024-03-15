@@ -26,6 +26,8 @@
   <ItemGroup>
     <Folder Include="wwwroot\assets\img\benefit\" />
     <Folder Include="wwwroot\assets\img\deal\" />
+    <Folder Include="wwwroot\assets\img\benefit\" />
+    <Folder Include="wwwroot\assets\img\deal\" />
   </ItemGroup>
 
 </Project>

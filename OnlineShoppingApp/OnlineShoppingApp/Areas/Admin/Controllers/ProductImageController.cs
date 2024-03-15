@@ -104,7 +104,7 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Update(UpdateViewModel updateViewModel)
+        public IActionResult Update(UpdateViewModel updateViewModel , int productId)
         {
             if (!ModelState.IsValid)
             {
@@ -125,7 +125,7 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
             if (updateViewModel.ProductId == null & updateViewModel.Id == null) return NotFound();
 
             var ProductImage = _onlineShoppingDbContext.ProductImages
-                .FirstOrDefault(pi => pi.Id == updateViewModel.Id && pi.ProductId == updateViewModel.ProductId);
+                .FirstOrDefault(pi => pi.Id == updateViewModel.Id && pi.ProductId == productId);
 
             if (ProductImage == null) return NotFound();
 
@@ -153,7 +153,7 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
             }
 
             _onlineShoppingDbContext.SaveChanges();
-            return RedirectToAction("List", new { productId = updateViewModel.ProductId });
+            return RedirectToAction("List", new { productId = productId });
 
         }
 
@@ -178,7 +178,7 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
 
             _onlineShoppingDbContext.SaveChanges();
 
-            return RedirectToAction("List");
+            return RedirectToAction("List", new {productId = productId});
 
         }
         private string GenerateImagePath(IFormFile file)

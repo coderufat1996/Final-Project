@@ -12,6 +12,11 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
     {
         private readonly OnlineShoppingDbContext _onlineShoppingDbContext;
 
+        public MessageController(OnlineShoppingDbContext onlineShoppingDbContext)
+        {
+            _onlineShoppingDbContext = onlineShoppingDbContext;
+        }
+
         [HttpGet]
         public IActionResult List()
         {

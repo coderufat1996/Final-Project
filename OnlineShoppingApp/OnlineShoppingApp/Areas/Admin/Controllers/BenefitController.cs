@@ -130,6 +130,8 @@ namespace OnlineShoppingApp.Areas.Admin.Controllers
                 findedbenefit.ImagePath = fileName;
             }
 
+            _onlineShoppingDbContext.SaveChanges();
+
             return RedirectToAction("List");
 
         }

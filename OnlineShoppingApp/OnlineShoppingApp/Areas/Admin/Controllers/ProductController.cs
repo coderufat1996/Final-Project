@@ -9,6 +9,7 @@ using OnlineShoppingApp.Extension;
 namespace OnlineShoppingApp.Areas.Admin.Controllers
 {
     [Area("admin")]
+    [Authorize(Roles = "Admin")]
 
     public class ProductController : Controller
     {

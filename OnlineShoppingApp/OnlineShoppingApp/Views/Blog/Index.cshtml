@@ -19,7 +19,7 @@
         <div class="blog-details">
             <h4>@blog.Tittle</h4>
             <p>
-              @blog.Content.Substring(1,100)
+              @blog.Content.Substring(1)
             </p>
             <a asp-controller="blog" asp-action="detail" asp-route-id="@blog.Id">CONTINUE READING</a>
         </div>

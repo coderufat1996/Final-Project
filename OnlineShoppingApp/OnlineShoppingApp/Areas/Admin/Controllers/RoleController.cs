@@ -6,7 +6,7 @@ using OnlineShoppingApp.DAL.Entities;
 
 namespace OnlineShoppingApp.Areas.Admin.Controllers
 {
-    [Area("EduHomeArea")]
+    [Area("Admin")]
     [Authorize(Roles = "Admin")]
     public class RoleController : Controller
     {

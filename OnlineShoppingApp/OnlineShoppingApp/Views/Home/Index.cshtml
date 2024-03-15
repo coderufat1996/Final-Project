@@ -14,7 +14,7 @@
     {
 
         <div class="fe-box">
-            <img src="/assets/img/@benefit.ImagePath" alt="">
+            <img src="/assets/img/benefit/@benefit.ImagePath" alt="">
             <h6>@benefit.Title</h6>
         </div>
     }
@@ -94,38 +94,14 @@
     @foreach (var deal in Model.Deals)
     {
 
-        <div class="banner-box" style="background-image: url(/assets/img/banner/@deal.ImagePath);">
+        <div class="banner-box" style="background-image:url('/assets/img/deal/@deal.ImagePath');">
             <h4>@deal.Title</h4>
             <h2>@deal.Offer</h2>
             <span>@deal.Description</span>
-            <a class="white">Learn More</a>
+            <a asp-controller="shop" asp-action="index" class="white">Learn More</a>
 
         </div>
     }
-
-    <div class="banner-box banner-box2" style="background-image: url(/assets/img/banner/b17.jpg);">
-        <h4>spring/summer</h4>
-        <h2>upcomming season</h2>
-        <span>The best classic dress is on sale at cara</span>
-        <a class="white">Collection</a>
-
-    </div>
-
-    <div class="banner-box banner-box2" style="background-image: url(/assets/img/banner/b17.jpg);">
-        <h4>spring/summer</h4>
-        <h2>upcomming season</h2>
-        <span>The best classic dress is on sale at cara</span>
-        <button class="white">Collection</button>
-
-    </div>
-
-    <div class="banner-box banner-box2" style="background-image: url(/assets/img/banner/b17.jpg);">
-        <h4>spring/summer</h4>
-        <h2>upcomming season</h2>
-        <span>The best classic dress is on sale at cara</span>
-        <button class="white">Collection</button>
-
-    </div>
 
 
 </section>

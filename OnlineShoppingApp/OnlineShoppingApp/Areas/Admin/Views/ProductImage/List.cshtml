@@ -26,7 +26,7 @@
                         @foreach (var productImage in Model.Images)
                         { 
                             <tr>
-                                <td><img src="@productImage.ImagePath" /></td>
+                                <td><img src="~/assets//img/products/@productImage" /></td>
                                 <td class="text-end">
                                     <a asp-controller="productimage" asp-action="update" asp-route-productId="@Model.ProductId" asp-route-Id="@productImage.Id" ><i class="las la-pen text-secondary font-16"></i></a>
                                     <form method="POST" asp-controller="productimage" asp-action="delete" asp-route-productId="@Model.ProductId" asp-route-Id="@productImage.Id" id="product-image-form-@productImage.Id" ></form>
